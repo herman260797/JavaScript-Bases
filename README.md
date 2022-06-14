@@ -1,12 +1,12 @@
 #   Correct linkdln learning exercise on the basics of javascript
 
-# Array
-# Boucle
-# String 
-# Conditions
-# Function 
-# Keyboard Listener 
-# Operateur 
+## Array
+## Boucle
+## String 
+## Conditions
+## Function 
+## Keyboard Listener 
+## Operateur 
 
 # Contact Me 
 hermanngumbu@gmail.com 
