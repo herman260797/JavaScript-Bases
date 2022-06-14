@@ -1,0 +1,28 @@
+<html>
+ <head>
+   <title>Ecouteur</title>
+ </head> 
+ <!-- lance le script !--->
+ <body onload="auChargementDeLaPage();">
+  <!-- création d'un tableau 1 colonne et 2 lignes !---> 
+ <table id="tableau"> 
+   <tr><td id="t1">un</td></tr> 
+   <tr><td id="t2">deux</td></tr> 
+ </table> 
+ </body> 
+    <script type="text/javascript">
+	   // fonction pour modifier le contenu de la seconde ligne du tableau
+	   function modifieTexte() {
+		 var t2 = document.getElementById("t2");
+		 t2.firstChild.nodeValue = "trois";    
+	   }
+	   // fonction pour ajouter un écouteur au tableau lors du chargement du document
+	   function auChargementDeLaPage() {
+		 //récupère dans la variable objetAEcouter le tableau 
+		 var objetAEcouter = document.getElementById("tableau"); 
+		 //nous posons l'écouteur sur le tableau
+		objetAEcouter.onclick = modifieTexte;
+	   } 
+   </script> 
+
+ </html> 

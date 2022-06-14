@@ -1,0 +1,11 @@
+
+<script>
+	//essayez d'extraire le mot produit et le mot cette après avoir fait tourné ce code
+	var phrase = "video2brain produit cette formation";
+	var positionEspaceGauche = phrase.indexOf(" ");
+	var aGauche = phrase.slice(0,positionEspaceGauche);
+	var positionEspaceDroit = phrase.lastIndexOf(" ");
+	var aDroite = phrase.slice(positionEspaceDroit,phrase.length);
+	alert(aGauche);
+	alert(aDroite);
+</script>

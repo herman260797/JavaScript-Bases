@@ -1,0 +1,12 @@
+<script>
+
+var ERcodePostal = new RegExp("^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$");
+//essayez ici plus ou moins de 5 chiffres des lettres autre que A ou B et plein d'autres choses encore :)
+var codePostal="75012";
+
+if (ERcodePostal.test(codePostal)){
+	alert("le code postal est bon");
+}else{
+	alert("Erreur sur le code postal !!");
+}
+</script>

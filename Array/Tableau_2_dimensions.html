@@ -1,0 +1,12 @@
+
+<script>
+  var noms = new Array("Dupont","Truel","Marconi");
+  var prenoms= new Array("jean","pierre","paolo");
+  var monTableau = new Array(noms,prenoms);
+
+  document.write("nombre de ligne du tableau final monTableau : " +monTableau.length+"<br />"); // Résultat = 2
+  document.write("nombre de ligne du tableau noms : " +monTableau[0].length+"<br />"); // Résultat = 3
+  document.write("nombre de ligne du tableau prenoms : " +monTableau[1].length+"<br />"); // Résultat = 3
+  document.write("valeur dans la colonne 0 ligne 2 de monTableau : " +monTableau[0][2]+"<br />"); // Résultat = Marconi
+  document.write("valeur dans la colonne 1 ligne 1 de monTableau : " +monTableau[1][1]+"<br />"); // Résultat = Pierre
+</script>

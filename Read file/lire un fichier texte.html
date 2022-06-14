@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lire un fichier externe</title>
+	</head>
+
+    <body>
+        <input type="file" onchange='chargerTexte(this)' />
+    </body>
+	<script>
+        //fonction qui récupère le fichier après son chargement
+        function surChargement(cible){
+            var sortie=cible.target.result;
+            //affiche les lignes du fichier texte qui commence par "@":				
+            sortie=sortie.split("\n").filter(/./.test, /\@/).join("\n");	
+            document.write(sortie);
+        }
+        //fonction qui lance le chargement du fichier
+        function chargerTexte(nomfichierTexte){
+            // si il y à un fichier
+            if(nomfichierTexte.files && nomfichierTexte.files[0]){
+                //création d'un objet FileReader nommé lecteurTexte
+                var lecteurTexte = new FileReader();
+                // écouteur sur l'évènement chargement du fichier
+                lecteurTexte.addEventListener("load",surChargement)
+                //lance le chargement du fichier
+                lecteurTexte.readAsText(nomfichierTexte.files[0]);
+            }
+                
+        } 
+    </script>
+</html>

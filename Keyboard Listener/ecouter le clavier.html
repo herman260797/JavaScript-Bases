@@ -1,0 +1,12 @@
+<script>
+//gérer les évènements clavier
+function MessageSurToucheActive() {
+    alert("Clavier active");
+}
+
+function EcouterClavier() {
+    addEventListener('keydown', MessageSurToucheActive, false)
+}
+
+window.onload = EcouterClavier;
+</script>

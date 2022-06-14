@@ -1,0 +1,12 @@
+<script>
+
+var ERtelephone = new RegExp("^0[1-9]([-. ]?[0-9]{2}){4}$");
+//essayez avec que des chiffres des espaces à la place des points plus de 10 chiffres etc....
+var telephone="01.46.28.58.99";
+
+if (ERtelephone.test(telephone)){
+	alert("bon");
+}else{
+	alert("Erreur !!");
+}
+</script>
